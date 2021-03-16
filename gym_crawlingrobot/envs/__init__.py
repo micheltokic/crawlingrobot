@@ -1,0 +1,2 @@
+from gym_crawlingrobot.envs.crawlingrobot_discrete_env import CrawlingRobotDiscreteEnv
+from gym_crawlingrobot.envs.crawlingrobot_continuous_env import CrawlingRobotContinuousEnv
