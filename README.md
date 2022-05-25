@@ -2,6 +2,8 @@
 
 Crawling Robot 2D Simulation with physics behavior.
 
+![PyGame window](crawling-robot.png)
+
 # Used librarys with Python 3.7
 
 - Pygame for GUI
