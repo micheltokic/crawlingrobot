@@ -338,7 +338,7 @@ class CrawlingRobot:
         #self.clock.tick(60
 
     def plot_episodes(self, ax, data):
-        ax.plot(data, 'k')
+        ax.plot(data, ls="-", marker="o", color='k')
         ax.set_xlim(left=0, right=max(10, len(data)-1))
         ax.set_ylim(bottom=0, top=max(data, default=1)*1.1)
         ax.grid(b=True, which='major', color='#666666', linestyle='-', alpha=0.2)
