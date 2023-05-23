@@ -40,3 +40,7 @@ env = gym.make('crawlingrobot-continuous-v1', goal_distance=2500, window_size=(1
 ```
 
 For Quick Start you can find a Python-notebook under the folder `example`.
+
+## Example of a reward model from the real crawling robot
+Videos: https://www.tokic.com/the-crawling-robot/
+![Hardware robot reward model](hardware-robot-reward-model.png)
