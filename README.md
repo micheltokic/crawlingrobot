@@ -11,12 +11,12 @@ Crawling Robot 2D Simulation with physics behavior.
 
 
 # Installation
-
+``` bash
 git clone git@github.com:micheltokic/crawlingrobot.git
 
 pip install tensorflow==1.15.0
 pip install -e crawlingrobot
-
+´´´
 ## possible errors during experiments
 If your Python kernel dies during the experiment and you receive the following error just update your NVIDIA driver to the latest version: 
   2022-05-26 00:28:32.360589: F tensorflow/stream_executor/lib/statusor.cc:34] Attempting to fetch value instead of handling error Internal: failed to get device attribute 13 for device 0: CUDA_ERROR_UNKNOWN: unknown error
