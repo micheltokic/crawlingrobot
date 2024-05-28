@@ -1,5 +1,5 @@
-import gym
-from gym import spaces
+import gymnasium as gym
+from gymnasium import spaces
 import numpy as np
 from gym_crawlingrobot.envs.crawlingRobot import CrawlingRobotDiscrete
 
@@ -25,12 +25,12 @@ class CrawlingRobotDiscreteEnv(gym.Env):
         obs = self.robot.get_observation()
         reward = self.robot.get_distance()
         done = self.robot.is_done()
-        return obs, reward, done, {}
+        return np.array(obs), reward, done, done, {}
     
-    def reset(self):
+    def reset(self, seed=None, options={}):
         # Reset the state of the environment to an initial state
         self.robot.reset()
-        return self.robot.get_observation()
+        return np.array(self.robot.get_observation()), {}
 
     def render(self, mode='human', close=False):
         # Render the environment to the screen

@@ -4,7 +4,7 @@ Crawling Robot 2D Simulation with physics behavior.
 
 ![PyGame window](crawling-robot.gif)
 
-# Used librarys with Python 3.7
+# Used librarys with Python 3.8
 
 - Pygame for GUI
 - Pymunk for Physics
@@ -13,8 +13,18 @@ Crawling Robot 2D Simulation with physics behavior.
 # Installation
 ``` bash
 git clone git@github.com:micheltokic/crawlingrobot.git
+cd crawlingrobot
 
-pip install tensorflow==1.15.0
+# create virtual env, e.g. with Python 3.8.10
+pyenv local 3.8.10
+python -m venv .venv
+.venv/bin/activate   # Linux
+.venv\scripts\activate   # Windows
+
+# install setuptools
+pip install setuptools
+
+# install package + dependencies 
 pip install -e crawlingrobot
 ```
 ## possible errors during experiments
@@ -25,7 +35,7 @@ If your Python kernel dies during the experiment and you receive the following e
 
 ## Example for usage
 ``` Python
-import gym
+import gymnasium as gym
 import gym_crawlingrobot
 
 # crawlingrobot discrete environment for Reinforcement Learning algorithm e.g. Q-Learning
