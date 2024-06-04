@@ -25,7 +25,7 @@ python -m venv .venv
 pip install setuptools
 
 # install package + dependencies 
-pip install -e crawlingrobot
+pip install -e .
 ```
 ## possible errors during experiments
 If your Python kernel dies during the experiment and you receive the following error just update your NVIDIA driver to the latest version: 
